@@ -8,6 +8,11 @@ class UserController {
     const user = await User.create(data);
     return user;
   }
+
+  async index() {
+    const user = await User.all();
+    return user;
+  }
 }
 
 module.exports = UserController;

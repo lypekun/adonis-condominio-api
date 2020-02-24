@@ -24,3 +24,5 @@ Route.post("/users", "UserController.create");
 Route.get("/users", "UserController.index");
 
 Route.post("/login", "AuthController.create");
+
+Route.resource("/condominiums", "CondominiumController");
